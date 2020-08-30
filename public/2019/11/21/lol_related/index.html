@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="en" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>Fizz 操作心得 | K A I D L O G</title><meta name="description" content="Fizz 操作心得"><meta name="keywords" content="fizz,lol"><meta name="author" content="Daekony"><meta name="copyright" content="Daekony"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://i.imgur.com/9bsJBDO.png"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Fizz 操作心得"><meta name="twitter:description" content="Fizz 操作心得"><meta name="twitter:image" content="https://1.bp.blogspot.com/-SqnEdYZB9pk/XOztEqncBqI/AAAAAAAAA6Y/fdWXqYGZRu8sP6G1__UIty9P3Gp7cBADwCK4BGAYYCw/s640/7c10499b-6fea-4c8d-99b6-d3f4d4a0a343.jpg"><meta property="og:type" content="article"><meta property="og:title" content="Fizz 操作心得"><meta property="og:url" content="http://daekony.github.io/2019/11/21/lol_related/"><meta property="og:site_name" content="K A I D L O G"><meta property="og:description" content="Fizz 操作心得"><meta property="og:image" content="https://1.bp.blogspot.com/-SqnEdYZB9pk/XOztEqncBqI/AAAAAAAAA6Y/fdWXqYGZRu8sP6G1__UIty9P3Gp7cBADwCK4BGAYYCw/s640/7c10499b-6fea-4c8d-99b6-d3f4d4a0a343.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.css"><link rel="canonical" href="http://daekony.github.io/2019/11/21/lol_related/"><link rel="prev" title="個人筆記 Notes" href="http://daekony.github.io/2019/11/21/note/"><link rel="next" title="網站導覽 Sitemap" href="http://daekony.github.io/2019/11/20/sitemap/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'true',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"Press","message_next":"to bookmark this page"},"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Light Mode Activated Manually","night_to_day":"Dark Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"}
+  
+}</script><link rel="alternate" href="/atom.xml" title="K A I D L O G" type="application/atom+xml">
+</head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">K A I D L O G</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> Recreation</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> Search</span></a></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="https://i.imgur.com/MMQsfsJ.jpg" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">12</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">16</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Categories</div><div class="length_num">12</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> Recreation</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">Catalog</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#守株待兔"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">守株待兔:</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#跑線支援"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">跑線支援:</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#我的福文"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">我的福文:</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#出莊思路"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">出莊思路:</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#核心裝備"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text">核心裝備</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#這-3-件我通常得出法是這樣"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text">這 3 件我通常得出法是這樣</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#case1"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text">case1:</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#case2"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text">case2:</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#condition1"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">condition1 :</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#condition2"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">condition2 :</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#case3"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text">case3:</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#最後裝備"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text">最後裝備:</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#順風我通常都是"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">順風我通常都是:</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#逆風通常都是"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">逆風通常都是:</span></a></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#守株待兔"><span class="toc-number">1.</span> <span class="toc-text">守株待兔:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#跑線支援"><span class="toc-number">2.</span> <span class="toc-text">跑線支援:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#我的福文"><span class="toc-number">3.</span> <span class="toc-text">我的福文:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#出莊思路"><span class="toc-number">4.</span> <span class="toc-text">出莊思路:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#核心裝備"><span class="toc-number">5.</span> <span class="toc-text">核心裝備</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#這-3-件我通常得出法是這樣"><span class="toc-number"></span> <span class="toc-text">這 3 件我通常得出法是這樣</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#case1"><span class="toc-number"></span> <span class="toc-text">case1:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#case2"><span class="toc-number"></span> <span class="toc-text">case2:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#condition1"><span class="toc-number">1.</span> <span class="toc-text">condition1 :</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#condition2"><span class="toc-number">2.</span> <span class="toc-text">condition2 :</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#case3"><span class="toc-number"></span> <span class="toc-text">case3:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最後裝備"><span class="toc-number"></span> <span class="toc-text">最後裝備:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#順風我通常都是"><span class="toc-number">1.</span> <span class="toc-text">順風我通常都是:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#逆風通常都是"><span class="toc-number">2.</span> <span class="toc-text">逆風通常都是:</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://1.bp.blogspot.com/-SqnEdYZB9pk/XOztEqncBqI/AAAAAAAAA6Y/fdWXqYGZRu8sP6G1__UIty9P3Gp7cBADwCK4BGAYYCw/s640/7c10499b-6fea-4c8d-99b6-d3f4d4a0a343.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">Fizz 操作心得</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> Created 2019-11-21<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> Updated 2019-11-23</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Lifestyle/">Lifestyle</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Lifestyle/Esport/">Esport</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon" aria-hidden="true"></i><span>Word count: </span><span class="word-count">1.8k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon" aria-hidden="true"></i><span>Reading time: 5 min</span><span class="post-meta__separator">|</span><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>Post View: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><blockquote>
+<p>在我入坑這個遊戲的那段時間，非常崇拜西門，而他的本命腳色又是飛斯，所以這是我花最多時間操作的腳色，也是最喜歡的腳色。</p>
+</blockquote>
+<blockquote>
+<p>首先，他經歷過好幾個版本的變動，但是不變的是，使用的核心能力: 守株待兔，跑線支援。</p>
+</blockquote>
+<p>當然，最基本的東西，就是<span style="border-bottom:2px dashed yellow;">基本功</span>跟<span style="border-bottom:2px dashed yellow;">練習對應出裝備</span>:</p>
+<p>這個的話，基本上，去 <a href="https://www.op.gg/champion/fizz/statistics/mid/" target="_blank" rel="noopener">OPGG</a> 官網可以有收穫，跟著前輩走絕對是對的。</p>
+<p>另外，基本功就是尾刀的技術，這個就是熟練度了，開啟自訂模式可以得到很好的練習，基本上遊戲時間如果 10分鐘，基本上就要尾 100 刀，才算合格。大概就是 1 : 10。</p>
+<p>當然飛斯最好尾刀的是塔下小兵，對線弱勢的時候，儘量讓兵線控制在塔附近，如果塔下的話，基本上進程小兵讓塔打兩下普攻就尾刀成功了，遠程小兵讓塔打一下然後開 W 尾刀。</p>
+<p>對線技巧的話，可以多看職業選手的影片，學習內化，有時候就會派上用場。</p>
+<p>再來我就要講核心了~~</p>
+<h4 id="守株待兔"><a href="#守株待兔" class="headerlink" title="守株待兔:"></a>守株待兔:</h4><p>飛斯這個英雄，最厲害的就是瞬間爆發傷害很高，又十分靈活，最強勢算是遊戲中期。<br>所以基本上，想辦法趕快出好核心裝備跟減 CD 的裝備，就儘量多跑線，這個目的是讓對方根本抓不到你的位置，然後儘量去排對方的眼位，然後有時候蹲一下對方野區的草叢，有時候機會就會上門了。</p>
+<p>最好的結果是，你的對線功夫很強，在線上打爆對方，或是蹲對方 JG 很多次，讓對方 JG 沒有作用，又或是跑線都起作用，讓對方其他線路崩盤。</p>
+<p>最糟的結果是，眼位沒排乾淨，最後就是你常常浪費時間做徒勞無功的事情，最後經濟差距拉大，遊戲時間拉長，你就沒有辦法有所作為。</p>
+<h4 id="跑線支援"><a href="#跑線支援" class="headerlink" title="跑線支援:"></a>跑線支援:</h4><p>飛斯這個英雄有個特性就是靈活，有位移又本身自帶免疫技能 E ，妥善利用的話，常常對方想要圍毆對友的時候，你兩三下就趕到肇事現場了，因為你自身帶很大的傷害，對方不一定敢作開戰。</p>
+<p>掌握這兩個重要的技能，基本上在遊戲中就可以有很大的作用了，再來就是經驗的累積了，個人是不太建議微操越塔操作，因為基本上要一個人靠微操 carry 整個遊戲，實在太過困難了，更何況微操失誤率更高，一次兩次的失誤，可能就不能玩了。</p>
+<p>BTW 狗狗飛斯的造型真的很可愛 : D</p>
+<p><img alt="狗狗飛斯造型" data-src="https://1.bp.blogspot.com/-F_XpYaajbEw/XOz0HvVw2vI/AAAAAAAAA6o/5lQ-CFPaqjo2MhDOixGH469JUvf5lsQCgCK4BGAYYCw/s400/Fizz_14%2B%25281%2529.jpg" class="lazyload"></p>
+<h4 id="我的福文"><a href="#我的福文" class="headerlink" title="我的福文:"></a>我的福文:</h4><p>通常就這兩個吧，上面的算通用的，下面是想疊傷害的</p>
+<p><img alt="符文 1" data-src="https://1.bp.blogspot.com/-qnI1a-_ieHA/XQ0C2LEf1zI/AAAAAAAABDM/Gk1N04dN5MsmJdeqXfIYJW2uzLSY9WAxgCLcBGAs/s640/%25E6%25A1%258C%25E9%259D%25A2.PNG" class="lazyload"></p>
+<p><img alt="符文 2" data-src="https://1.bp.blogspot.com/-gMrfWBx1HsA/XQ0C3zhhiQI/AAAAAAAABDQ/iqJRgBNdjZoklTqhhTH2qzG3Yb-Sc4rwQCLcBGAs/s640/%25E6%2593%25B7%25E5%258F%25961.PNG" class="lazyload"></p>
+<h4 id="出莊思路"><a href="#出莊思路" class="headerlink" title="出莊思路:"></a>出莊思路:</h4><p>出門就汙濁藥劑，第一次回程出小疊書 + 小鞋子 + 紅眼</p>
+<h4 id="核心裝備"><a href="#核心裝備" class="headerlink" title="核心裝備"></a>核心裝備</h4><blockquote>
+<p>保命: 中亞沙漏</p>
+</blockquote>
+<blockquote>
+<p>傷害: 黑魔禁書、黎安卓的折磨、虛空之杖</p>
+</blockquote>
+<blockquote>
+<p>洗冰: 海科斯腰帶、海克斯科技 GLP-800、盧登的回音</p>
+</blockquote>
+<ol>
+<li><p>保命:</p>
+<p> 中亞沙漏肯定是必出的裝備，這不僅大大的提升飛斯的靈活度也幫助了他在打架存活的程度，因為飛斯的精隨就是靈活調皮、可進可出</p>
+</li>
+<li><p>傷害:</p>
+<p> 遊戲難免會拖到後期，別人防裝出起來，你可能就會打醬油沒傷害，所以這邊前期出完，可以確保前後期都有一定的輸出</p>
+</li>
+</ol>
+<h3 id="這-3-件我通常得出法是這樣"><a href="#這-3-件我通常得出法是這樣" class="headerlink" title="這 3 件我通常得出法是這樣"></a>這 3 件我通常得出法是這樣</h3><p>對面有厄薩斯、歐拉夫……回寫多的腳色  &gt;&gt;&gt; 黑魔禁書<br>有科加斯、賽恩……血多到不行的腳色 &gt;&gt;&gt; 黎安卓的折磨<br>遇到對面沒有坦克腳色 &gt;&gt;&gt; 會考慮出虛空之杖<br>其他: 我通常順風出黑魔禁書，逆風就黑魔加黎安卓的折磨</p>
+<ol start="3">
+<li><p>洗冰:</p>
+<blockquote>
+<p>飛斯再傷害成型之前吃冰是不快的，這樣一來非常不好單帶，但是隊友通常會需要靈活不容易死的腳色去單帶一線，所以洗冰裝備是必須的。</p>
+</blockquote>
+</li>
+</ol>
+<p>我簡單分成三種 case:</p>
+<h3 id="case1"><a href="#case1" class="headerlink" title="case1:"></a>case1:</h3><p>你的操作已經在對線上屌打對手了，而且你帶點燃加閃現<br>我覺得不用考慮了，就是出爐燈的回音，至於為甚麼呢? 因為飛斯說穿了是一隻雪球腳色，當雪球滾起來，他才容易有操作的表現，那麼傷害的推疊就非常的重要，通常可以搭配死帽 or 疊書使用，當然超順風的話，就都出也可以~~</p>
+<h3 id="case2"><a href="#case2" class="headerlink" title="case2:"></a>case2:</h3><p>對線上 5.5 開 or 你帶 傳送 +閃現</p>
+<p>我會在分成兩種狀況</p>
+<h4 id="condition1"><a href="#condition1" class="headerlink" title="condition1 :"></a>condition1 :</h4><p>遇上刺客:  海科斯腰帶<br>畢竟你已經5.5開了，遇上刺客很容易被GK就一套被帶走，所以血量對你來說蠻重要的，也可以幫助你增加換血的能力。</p>
+<h4 id="condition2"><a href="#condition2" class="headerlink" title="condition2 :"></a>condition2 :</h4><p>遇上法師: 海克斯科技 GLP-800<br>因為法師通常在前期傷害不夠一套帶走你，所以通常都是對你進行騷擾，而你面對騷擾，需要的是魔力來進行更多的換血機會</p>
+<h3 id="case3"><a href="#case3" class="headerlink" title="case3:"></a>case3:</h3><div class="note warning">
+            <p>對線上3.7或者 極劣勢 </p>
+          </div>
+
+> 這時候只能出 海科斯腰帶了，你不出這個大概被殺爆吧
+
+
+
+核心裝備出完，你大概會有 20% -CD
+
+那麼基本上我的飛斯一定會讓他滿CD，為了就是增加靈活性
+
+那可以考慮的裝備有 愛歐尼亞之靴、巫妖之禍、女妖面紗.....這部分看個人喜好
+
+
+<div class="note warning">
+            <p>例外狀況:</p>
+          </div>
+
+<p>遇上勒布朗我會多一件核心裝備 &gt;&gt;&gt; 深淵面具<br>遇到CC多的局我會多一件核心裝備 &gt;&gt;&gt; 女妖面紗</p>
+<h3 id="最後裝備"><a href="#最後裝備" class="headerlink" title="最後裝備:"></a>最後裝備:</h3><h4 id="順風我通常都是"><a href="#順風我通常都是" class="headerlink" title="順風我通常都是:"></a>順風我通常都是:</h4><blockquote>
+<p>盧登的回音 + 死亡之帽 + 黑魔禁書 + 中亞沙漏 + cd 鞋 + 疊書<br>盧登的回音 + 死亡之帽 + 黑魔禁書 + 中亞沙漏 + cd 鞋 + 煉魔渾儀</p>
+</blockquote>
+<h4 id="逆風通常都是"><a href="#逆風通常都是" class="headerlink" title="逆風通常都是:"></a>逆風通常都是:</h4><blockquote>
+<p>盧登的回音跟疊書改成 海科斯腰帶 + 女妖面紗 or 黎安卓的折磨</p>
+</blockquote>
+<p>我個人篇好在對線上取得優勢，所以我都不帶傳送的，打法跟出裝也都偏向對線，畢竟單排不一定會有JG幫你滾雪球，你必須靠自己滾雪球，所以我的出莊未必是主流的出法</p>
+<div class="note info">
+            <p>我覺得記住三個點通常可以拿到滾雪球的機會</p>
+          </div>
+
+<p>有時候可以裝笨，讓對手浪，一旦出現失誤，就是你的機會<br>蹲點，把自己想成 cs 的狙擊手，把冰線洗完有機會就蹲人<br>運用靈活度跑線支援，飛斯跑線真的很快，只要支援通常可以撿到便宜，讓自己滾雪球的機會</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined" target="_blank" rel="noopener">Daekony</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://daekony.github.io/2019/11/21/lol_related/">http://daekony.github.io/2019/11/21/lol_related/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/fizz/">fizz    </a><a class="post-meta__tags" href="/tags/lol/">lol    </a></div><div class="post_share"><div class="social-share" data-image="https://1.bp.blogspot.com/-SqnEdYZB9pk/XOztEqncBqI/AAAAAAAAA6Y/fdWXqYGZRu8sP6G1__UIty9P3Gp7cBADwCK4BGAYYCw/s640/7c10499b-6fea-4c8d-99b6-d3f4d4a0a343.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button"><i class="fa fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="https://payment.ecpay.com.tw/Upload/QRCode/201906/QRCode_e459be09-ba9e-4b3e-9860-d6c4d7e291d1.png"><div class="post-qr-code__desc">EcPay</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2019/11/21/note/"><img class="prev_cover lazyload" data-src="https://store-images.s-microsoft.com/image/apps.54771.63131787694667297.e786edde-5064-499d-9660-f3d7c293ceaa.fc6bab12-c6bc-451d-b5f9-5e128e481294?mode=scale&amp;q=90&amp;h=1080&amp;w=1920" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Previous Post</div><div class="prev_info"><span>個人筆記 Notes</span></div></a></div><div class="next-post pull_right"><a href="/2019/11/20/sitemap/"><img class="next_cover lazyload" data-src="https://kbdevstorage1.blob.core.windows.net/asset-blobs/19758_en_1" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>網站導覽 Sitemap</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> Comment</span></div><div id="disqus_thread"></div><script>var unused = null;
+var disqus_config = function () {
+  this.page.url = 'http://daekony.github.io/2019/11/21/lol_related/';
+  this.page.identifier = '2019/11/21/lol_related/';
+  this.page.title = 'Fizz 操作心得';
+}
+var d = document, s = d.createElement('script');
+s.src = "https://" + 'daekony' +".disqus.com/embed.js";
+s.setAttribute('data-timestamp', '' + +new Date());
+(d.head || d.body).appendChild(s);</script></div></div></div><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2014 - 2020 By Daekony</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion" target="_self">繁</a><i class="darkmode fa fa-sun-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="Scroll to comment"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script async src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.15/dist/snackbar.min.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true; // make power mode colorful
+POWERMODE.shake = true; // turn off shake
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/third-party/click_heart.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
