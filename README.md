@@ -9,11 +9,11 @@ You can click the Preview link to take a look at your changes.
 - 🔭 I’m currently working on Mediatek as Software Enginner
 - Check my 🖋 [Chinese blog](http://#) or 🌱 [Udemy Online Course](https://#)
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kaidlog&theme=github)
-![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kaidlog&theme=github)
-![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kaidlog&theme=github)
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kaidlog&theme=nord_dark)
+![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kaidlog&theme=nord_dark)
+![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kaidlog&theme=nord_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kaidlog&theme=github)
-![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kaidlog&theme=github)
+![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kaidlog&theme=nord_dark)
 
 <!--
 **nchtw164/nchtw164** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
