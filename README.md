@@ -12,7 +12,7 @@ You can click the Preview link to take a look at your changes.
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kaidlog&theme=nord_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kaidlog&theme=nord_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kaidlog&theme=nord_dark)
-![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kaidlog&theme=github)
+![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kaidlog&theme=nord_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kaidlog&theme=nord_dark)
 
 <!--
