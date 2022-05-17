@@ -7,7 +7,7 @@ You can click the Preview link to take a look at your changes.
 [![Github](https://img.shields.io/github/followers/kaidlog?label=Follow&style=social)](https://github.com/kaidlog)
 
 - 🔭 I’m currently working on Mediatek as Software Enginner
-- Check my 🖋 [Chinese blog](http://#) or 🌱 [Udemy Online Course](https://#)
+- Check my 🖋 [Tech blog](http://#) or 🌱 [Life blog](https://#)
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kaidlog&theme=nord_dark)
 ![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=kaidlog&theme=nord_dark)
