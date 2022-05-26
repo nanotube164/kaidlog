@@ -6,7 +6,7 @@ You can click the Preview link to take a look at your changes.
 
 [![Github](https://img.shields.io/github/followers/kaidlog?label=Follow&style=social)](https://github.com/kaidlog)
 
-- 🔭 I’m currently working on Mediatek as Software Enginner since 09/2022
+- 🔭 I’m currently working on E.Sun Bank as Software Enginner.
 - Check my 🖋 [Tech blog](http://#) or 🌱 [Life blog](https://#)
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kaidlog&theme=nord_dark)
