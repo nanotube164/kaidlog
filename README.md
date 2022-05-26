@@ -5,7 +5,7 @@ You can click the Preview link to take a look at your changes.
 ### Hey 👋, I'm kaidlog
 
 [![Github](https://img.shields.io/github/followers/kaidlog?label=Follow&style=social)](https://github.com/kaidlog)
-
+- 👨‍🎓 Graduated from National Chengchi University, currently in persuit of further diploma in the U.S.
 - 🔭 I’m currently working on E.Sun Bank as Software Enginner.
 - Check my 🖋 [Tech blog](http://#) or 🌱 [Life blog](https://#)
 
